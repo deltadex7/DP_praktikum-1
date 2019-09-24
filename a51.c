@@ -12,28 +12,13 @@
 
 #include <stdio.h>
 
-long square(long e);
-long sumpow(long n);
 
 int main(int argc, char const *argv[])
 {
     long n;
     scanf("%ld", &n);
-    printf("%ld\n", sumpow(n));
+
+    long res = 0;
+    printf("%ld\n", res);
     return 0;
-}
-
-long square(long e)
-{
-    return e * e;
-}
-
-long sumpow(long n)
-{
-    long sum = 0, mod = 1;
-    while (n > 0)
-    {
-        
-    }
-    return sum;
 }

@@ -2,23 +2,24 @@
 
 int main(int argc, char const *argv[])
 {
-    int a, b, n;
-    scanf("%d %d %d", &a, &b, &n);
+    long a, b, n;
+    scanf("%ld %ld %ld", &a, &b, &n);
     
-    int sum = 0;
-    int i = a, j = b;
-    while (i <= n || j <= n)
+    long sum = 0;
+    long i = a, j = b;
+    while (i < n || j < n)
     {
         if (i < j) {
-            //if (i != j)
-                sum += i;
+            sum += i;
+            i += a;
         } else {
             sum += j;
+            if(i == j) i += a;
             j += b;
         }
-            i += a;
+        
     }
     
-    printf("%d\n", sum);
+    printf("%ld\n", sum);
     return 0;
 }
