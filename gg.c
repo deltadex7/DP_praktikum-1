@@ -14,6 +14,6 @@ int main(int argc, char const *argv[])
         --n;
     }
     
-    printf("%d\n", res);
+    printf("%ld\n", res);
     return 0;
 }
