@@ -15,13 +15,13 @@
 
 int main(int argc, char const *argv[])
 {
-    long n;
-    scanf("%ld", &n);
+    unsigned long long n;
+    scanf("%llu", &n);
 
-         /* Result */
-    long long res = 0ll,
-         /* Square modifier (mod^2) */
-              mod = 1;
+                       /* Result */
+    unsigned long long res = 0ll,
+                       /* Square modifier (mod^2) */
+                       mod = 1;
 
     while (n > 0)
     {
@@ -30,6 +30,6 @@ int main(int argc, char const *argv[])
     }
     
 
-    printf("%lld\n", res);
+    printf("%llu\n", res);
     return 0;
 }
