@@ -19,9 +19,9 @@ int main(int argc, char const *argv[])
     scanf("%ld", &n);
 
          /* Result */
-    long res = 0, 
-         /* Suare modifier (mod^2) */
-         mod = 1;
+    long long res = 0ll,
+         /* Square modifier (mod^2) */
+              mod = 1;
 
     while (n > 0)
     {
@@ -30,6 +30,6 @@ int main(int argc, char const *argv[])
     }
     
 
-    printf("%ld\n", res);
+    printf("%lld\n", res);
     return 0;
 }
