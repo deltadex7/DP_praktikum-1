@@ -18,7 +18,18 @@ int main(int argc, char const *argv[])
     long n;
     scanf("%ld", &n);
 
-    long res = 0;
+         /* Result */
+    long res = 0, 
+         /* Suare modifier (mod^2) */
+         mod = 1;
+
+    while (n > 0)
+    {
+        res += (mod * mod) * (n % 2);
+        n /= 2; mod *= 2;
+    }
+    
+
     printf("%ld\n", res);
     return 0;
 }
